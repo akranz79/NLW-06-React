@@ -102,19 +102,19 @@ Após a instalação finalizar, feche e abra o terminal novamente, em seguida ro
 
 Caso retorne a versão do Yarn (acima de 1.0 e abaixo de 2.0), a instalação ocorreu com sucesso.
 
-## Configurações
+## Configurações VSCopde
 
 Para finalizar, vamos adicionar algumas configurações no Visual Studio Code. Para isso, basta pressionar `Ctrl + Shift + P` e escolher a opção `Open Settings (JSON)`. Na janela que foi aberta, adicione as configurações abaixo:
 
-<aside>
-⚠️ É preciso tomar alguns cuidados ao realizar essas alterações. Verifique se a configuração adicionada já não existe no arquivo. Se sim, apenas atualize o valor. 
+> [!WARNING]
+	É preciso tomar alguns cuidados ao realizar essas alterações. Verifique se a configuração adicionada já não existe no arquivo. Se sim, apenas atualize o valor. 
 
-Verifique também se a todas as linhas de configuração **exceto a última** terminam com vírgula, para não gerar erro. 
+	Verifique também se a todas as linhas de configuração **exceto a última** terminam com vírgula, para não gerar erro. 
 
-Por fim, caso queira substituir completamente a sua configuração pela abaixo, envolva com chaves `{}` todo o código disponibilizado.
+	Por fim, caso queira substituir completamente a sua configuração pela abaixo, envolva com chaves `{}` todo o código disponibilizado.
 
-</aside>
-
+```bash
+ 
   // Configurações da fonte JetBrains Mono
   "editor.fontFamily": "JetBrains Mono",
   "editor.fontLigatures": true,
@@ -143,3 +143,15 @@ Por fim, caso queira substituir completamente a sua configuração pela abaixo, 
 
   "javascript.suggest.autoImports": true,
   "typescript.suggest.autoImports": true,
+
+```
+
+---
+<br />
+
+<a href="https://github.com/akranz79/"><img src="https://github.com/akranz79/akranz79/blob/main/img/img2.png" width="100px;" alt="" /> </a>
+ 
+[![Linkedin Badge](https://img.shields.io/badge/-Alexandre-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/akranz/)](https://www.linkedin.com/in/akranz/)
+[![Gmail Badge](https://img.shields.io/badge/-ahkranz79@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:ahkranz79@gmail.com)](mailto:ahkranz79@gmail.com)
+
+⚙ O desenvolvimento de software é uma arte em constante evolução - nunca se contente com o suficiente. ⚙
