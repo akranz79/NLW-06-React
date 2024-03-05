@@ -23,22 +23,30 @@ Escolhido o shell, vamos começar a instalação:
 - Busque no campo de busca do Windows por **Windows Powershell**, clique com o botão direito em cima do programa e escolha a opção **Executar como administrador**.
 - O Powershell trabalha com um esquema de autorizações (conhecido como `Execution Policy`) para execução de scripts e, por isso, precisamos verificar se o presente no sistema está compatível com o que o Chocolatey precisa. Execute o seguinte comando:
 
+```bash
 Get-ExecutionPolicy
+```
 
 Caso ele retorne Restricted, execute o comando:
 
+```bash
 Set-ExecutionPolicy RemoteSigned
+```
 
 E escolha a opção [A] Sim para Todos
 
 > [!CAUTION]
 >Caso o comando acima apresente erro, tente usar:
 
+```bash
 Set-ExecutionPolicy Bypass -Scope Process
+```
 
 Verifique se alteração de permissão ocorreu com sucesso executando novamente o comando:
 
+```bash
 Get-ExecutionPolicy
+```
 
 Alterada a permissão, basta instalar o Chocolatey com o comando:
 
@@ -50,8 +58,8 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 >   PowerShell v3+ <br />
 >   .NET Framework 4.5+ <br />
 
-Caso o erro apresentado seja Exceção ao definir "SecurityProtocol": "Não é possível converter o valor "3312", siga esse guia.
-https://blog.chocolatey.org/2020/01/remove-support-for-old-tls-versions/
+Caso o erro apresentado seja Exceção ao definir "SecurityProtocol": "Não é possível converter o valor "3312", siga esse [guia](https://blog.chocolatey.org/2020/01/remove-support-for-old-tls-versions/)
+
 
 Após o fim da instalação, feche e abra o powershell como administrador novamente e execute:
 
