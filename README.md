@@ -63,18 +63,24 @@ Caso o erro apresentado seja Exceção ao definir "SecurityProtocol": "Não é p
 
 Após o fim da instalação, feche e abra o powershell como administrador novamente e execute:
 
+```bash
 choco -v
+```
 
 Caso ele retorne a versão do Chocolatey, a instalação foi um sucesso. Para finalizar, basta instalar a versão LTS mais recente do Node com o seguinte comando:
 
+```bash
 cinst nodejs-lts
+```
 
 E escolha a opção `[A]ll - yes to all`
 
 Após o fim da instalação, feche e abra o powershell como administrador novamente e execute:
 
+```bash
 node -v
 npm -v
+```
 
 > [!NOTE]
 >Caso retorne as versões do Node e Npm, sua instalação foi um sucesso.
