@@ -2,14 +2,13 @@
 
 ## Preparando o ambiente
 
-Sem mais delongas, vamos ao conteúdo principal desse guia: configuração do seu ambiente para o NLW. Teremos três etapas principais na seção "**Instalação"**:
+Vamos ao conteúdo principal desse guia: configuração do seu ambiente para o NLW. Teremos três etapas principais na seção "**Instalação"**:
 
 > [!NOTE]
 > - Node + NPM;
 > - Yarn;
 > - Visual Studio Code e configurações.
 
-Se você já participou de alguma das nossas outras NLWs, já deve ter tudo isso instalado, mas talvez desatualizado. Por isso, preparamos uma seção "**Atualização"** para você atualizar suas dependências caso precise, mas sugerimos dar uma olhada pelo menos no guia Visual Studio Code na seção "**Instalação"** pois o Diego deixou algumas configs especialmente para você 💜
 
 ## Windows
 
@@ -103,6 +102,44 @@ Após a instalação finalizar, feche e abra o terminal novamente, em seguida ro
 
 Caso retorne a versão do Yarn (acima de 1.0 e abaixo de 2.0), a instalação ocorreu com sucesso.
 
-### Possíveis problemas
+## Configurações
 
-Ao usar o Yarn no Windows para instalar as dependências nos seus projetos, atente-se para que seu nome de usuário não possua espaços, pois nesse caso, alguns erros poderão ocorrer durante esse processo, como por exemplo: com o nome "Diego Fernandes", o caminho até a pasta do projeto (supondo que estivesse na pasta *Documents*) seria algo como `C:\Users\Diego Fernandes\Documents\NLW\Projeto` e nesse caso, uma solução seria criar o projeto já na raiz do **Disco C**. Dessa forma, o caminho até a pasta não passaria pelo nome do usuário, ficando `C:\NLW\Projeto`.
+Para finalizar, vamos adicionar algumas configurações no Visual Studio Code. Para isso, basta pressionar `Ctrl + Shift + P` e escolher a opção `Open Settings (JSON)`. Na janela que foi aberta, adicione as configurações abaixo:
+
+<aside>
+⚠️ É preciso tomar alguns cuidados ao realizar essas alterações. Verifique se a configuração adicionada já não existe no arquivo. Se sim, apenas atualize o valor. 
+
+Verifique também se a todas as linhas de configuração **exceto a última** terminam com vírgula, para não gerar erro. 
+
+Por fim, caso queira substituir completamente a sua configuração pela abaixo, envolva com chaves `{}` todo o código disponibilizado.
+
+</aside>
+
+  // Configurações da fonte JetBrains Mono
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontLigatures": true,
+
+  // Demais configurações
+  "workbench.colorTheme": "Omni",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.startupEditor": "newUntitledFile",
+
+  "explorer.compactFolders": false,
+  "editor.renderLineHighlight": "gutter",
+  "workbench.editor.labelFormat": "short",
+  "extensions.ignoreRecommendations": true,
+
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "never",
+
+  "breadcrumbs.enabled": true,
+  "editor.parameterHints.enabled": false,
+	"editor.formatOnSave": true,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  
+  "emmet.syntaxProfiles": { "javascript": "jsx" },
+  "emmet.includeLanguages": { "javascript": "javascriptreact" },
+
+  "javascript.suggest.autoImports": true,
+  "typescript.suggest.autoImports": true,
